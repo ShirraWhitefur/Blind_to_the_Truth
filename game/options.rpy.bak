@@ -23,19 +23,18 @@ init -1 python hide:
     ## This controls the title of the window, when Ren'Py is
     ## running in a window.
 
-    config.window_title = u"A Ren'Py Game"
+    config.window_title = u"Blind to the Truth"
 
     # These control the name and version of the game, that are reported
     # with tracebacks and other debugging logs.
-    config.name = "A Ren'Py Game"
+    config.name = "Blind to the Truth"
     config.version = "0.0"
 
     #########################################
     # Themes
-    
-    ## We then want to call a theme function. themes.roundrect is
-    ## a theme that features the use of rounded rectangles. It's
-    ## the only theme we currently support.
+
+    ## We then want to call a theme function. theme.roundrect is
+    ## a theme that features the use of rounded rectangles.
     ##
     ## The theme function takes a number of parameters that can
     ## customize the color scheme.
@@ -55,7 +54,7 @@ init -1 python hide:
         ## example, the current value of a preference.)
         widget_selected = "#ffffc8",
 
-        ## The color of a disabled widget face. 
+        ## The color of a disabled widget face.
         disabled = "#404040",
 
         ## The color of disabled widget text.
@@ -83,7 +82,7 @@ init -1 python hide:
 
         ## And we're done with the theme. The theme will customize
         ## various styles, so if we want to change them, we should
-        ## do so below.            
+        ## do so below.
         )
 
 
@@ -166,9 +165,9 @@ init -1 python hide:
 
     config.has_music = True
 
-    ## Set this to False if the game does not have voicing.
+    ## Set this to True if the game has voicing.
 
-    config.has_voice = True
+    config.has_voice = False
 
     ## Sounds that are used when button and imagemaps are clicked.
 
@@ -198,7 +197,7 @@ init -1 python hide:
     ##   show help to the user.
     ## - A file name relative to the base directory, which is opened in a
     ##   web browser.
-    ## - None, to disable help.   
+    ## - None, to disable help.
     config.help = "README.html"
 
 
@@ -235,13 +234,33 @@ init -1 python hide:
     ## Used when the window is hidden.
     config.window_hide_transition = None
 
+    ## Used when showing NVL-mode text directly after ADV-mode text.
+    config.adv_nvl_transition = dissolve
+
+    ## Used when showing ADV-mode text directly after NVL-mode text.
+    config.nvl_adv_transition = dissolve
+
+    ## Used when yesno is shown.
+    config.enter_yesno_transition = None
+
+    ## Used when the yesno is hidden.
+    config.exit_yesno_transition = None
+
+    ## Used when entering a replay
+    config.enter_replay_transition = None
+
+    ## Used when exiting a replay
+    config.exit_replay_transition = None
+
+    ## Used when the image is changed by a say statement with image attributes.
+    config.say_attribute_transition = None
 
     #########################################
     ## This is the name of the directory where the game's data is
     ## stored. (It needs to be set early, before any other init code
-    ## is run, so the persisten information can be found by the init code.)
+    ## is run, so the persistent information can be found by the init code.)
 python early:
-    config.save_directory = "Dressup-1332826566"
+    config.save_directory = "Blind to the Truth-1433452233"
 
 init -1 python hide:
     #########################################
@@ -259,7 +278,9 @@ init -1 python hide:
 
     config.default_text_cps = 0
 
+    ## The default auto-forward time setting.
+
+    config.default_afm_time = 10
+
     #########################################
     ## More customizations can go here.
-    
-    

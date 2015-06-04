@@ -17,66 +17,66 @@ init -1 python hide:
 
     ## These control the width and height of the screen.
 
-    config.screen_width = 1024
-    config.screen_height = 768
+    config.screen_width = 800
+    config.screen_height = 600
 
     ## This controls the title of the window, when Ren'Py is
     ## running in a window.
 
-    config.window_title = u"A Ren'Py Game"
+    config.window_title = u"Blind to the Truth"
 
     # These control the name and version of the game, that are reported
     # with tracebacks and other debugging logs.
-    config.name = "A Ren'Py Game"
+    config.name = "Blind to the Truth"
     config.version = "0.0"
 
     #########################################
     # Themes
-    
-    ## We then want to call a theme function. themes.roundrect is
-    ## a theme that features the use of rounded rectangles. It's
-    ## the only theme we currently support.
+
+    ## We then want to call a theme function. theme.roundrect is
+    ## a theme that features the use of rounded rectangles.
     ##
     ## The theme function takes a number of parameters that can
     ## customize the color scheme.
 
-    theme.marker(
-        # Color scheme: Tree Frog
-                                    
+    theme.glow(
+        ## Theme: Glow
+        ## Color scheme: Muted Horror
+
         ## The color of an idle widget face.
-        widget = "#1c140d",
+        widget = "#777777",
 
         ## The color of a focused widget face.
-        widget_hover = "#86827e",
+        widget_hover = "#73735C",
 
         ## The color of the text in a widget.
-        widget_text = "#cbe86b",
+        widget_text = "#404033",
 
         ## The color of the text in a selected widget. (For
         ## example, the current value of a preference.)
-        widget_selected = "#f2e9e1",
+        widget_selected = "#000000",
 
-        ## The color of a disabled widget face. 
-        disabled = "#ffffff",
+        ## The color of a disabled widget face.
+        disabled = "#73735C",
 
         ## The color of disabled widget text.
-        disabled_text = "#1c140d",
+        disabled_text = "#8C8C70",
 
         ## The color of informational labels.
-        label = "#1c140d",
+        label = "#1A0001",
 
         ## The color of a frame containing widgets.
-        frame = "#cbe86b",
+        frame = "#555544",
 
         ## The background of the main menu. This can be a color
         ## beginning with '#', or an image filename. The latter
         ## should take up the full height and width of the screen.
-        mm_root = "#ffffff",
+        mm_root = "#1A0001",
 
         ## The background of the game menu. This can be a color
         ## beginning with '#', or an image filename. The latter
         ## should take up the full height and width of the screen.
-        gm_root = "#ffffff",
+        gm_root = "#1A0001",
 
         ## If this is True, the in-game window is rounded. If False,
         ## the in-game window is square.
@@ -84,7 +84,7 @@ init -1 python hide:
 
         ## And we're done with the theme. The theme will customize
         ## various styles, so if we want to change them, we should
-        ## do so below.            
+        ## do so below.
         )
 
 
@@ -167,9 +167,9 @@ init -1 python hide:
 
     config.has_music = True
 
-    ## Set this to False if the game does not have voicing.
+    ## Set this to True if the game has voicing.
 
-    config.has_voice = True
+    config.has_voice = False
 
     ## Sounds that are used when button and imagemaps are clicked.
 
@@ -199,7 +199,7 @@ init -1 python hide:
     ##   show help to the user.
     ## - A file name relative to the base directory, which is opened in a
     ##   web browser.
-    ## - None, to disable help.   
+    ## - None, to disable help.
     config.help = "README.html"
 
 
@@ -236,13 +236,33 @@ init -1 python hide:
     ## Used when the window is hidden.
     config.window_hide_transition = None
 
+    ## Used when showing NVL-mode text directly after ADV-mode text.
+    config.adv_nvl_transition = dissolve
+
+    ## Used when showing ADV-mode text directly after NVL-mode text.
+    config.nvl_adv_transition = dissolve
+
+    ## Used when yesno is shown.
+    config.enter_yesno_transition = None
+
+    ## Used when the yesno is hidden.
+    config.exit_yesno_transition = None
+
+    ## Used when entering a replay
+    config.enter_replay_transition = None
+
+    ## Used when exiting a replay
+    config.exit_replay_transition = None
+
+    ## Used when the image is changed by a say statement with image attributes.
+    config.say_attribute_transition = None
 
     #########################################
     ## This is the name of the directory where the game's data is
     ## stored. (It needs to be set early, before any other init code
-    ## is run, so the persisten information can be found by the init code.)
+    ## is run, so the persistent information can be found by the init code.)
 python early:
-    config.save_directory = "Dressup-1332826566"
+    config.save_directory = "Blind to the Truth-1433452233"
 
 init -1 python hide:
     #########################################
@@ -260,7 +280,9 @@ init -1 python hide:
 
     config.default_text_cps = 0
 
+    ## The default auto-forward time setting.
+
+    config.default_afm_time = 10
+
     #########################################
     ## More customizations can go here.
-    
-    
