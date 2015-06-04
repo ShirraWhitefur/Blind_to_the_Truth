@@ -1,4 +1,7 @@
 /.project
+/game/saves
+/errors.txt
 /log.txt
-/tmp/
-/game/bytecode.rpyb
+/traceback.txt
+/tmp
+/game/*.bak
