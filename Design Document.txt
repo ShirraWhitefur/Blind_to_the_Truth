@@ -1,8 +1,16 @@
 
-
-Stage 1
+Stage 0
 	Completed
 		Game Name
+	Incomplete
+		Install Github Client to Writer's computer (Optional)
+		Set up a method to coordinate on the scripts.
+			Github, Google-docs, etc.
+		Install RenPy SDK
+		Pull current Github down
+		Set up current github mirror in RenPy
+		Confirm that it all is working as planned.
+Stage 1
 	Incomplete
 		Color picking
 			Main Background - For when there are no other background graphics in use.
@@ -17,12 +25,23 @@ Stage 1
 			  Have both a background color for the button, and foreground color for the text.  Can be done with 'glow' around the text to make it even more legible in some cases.
 			Character colors:
 				One color of speech per character, and color for their name.  Likely to be the same.  Make sure they're readable against the textbox background.
+				You'll want a color for 'the narrator', even if that's -usually- the Main Character.  This is for writing out sound effects, things heard, titles of places, time of day.. all that misc stuff.
 		Character Names
 Stage 1.1
+	Incomplete
 		Sample Text
+			Something to work with the sample sounds, with two quick branches, and the sounds intermixed, so I can make sure we're getting what you're after.  Use at least two characters.
 		Sample Sounds
+			Basic repeating sound effect, possibly the beep of a heart monitor?
+			Door open and close.
 Stage 1.2
+	Incomplete
 		Test Build
 Stage 2
-				
+	Incomplete
+		Character Images
+			Even if it's as simple as just one image per character, to show when they're speaking, even if it's just an silhouette piece.  In fact, silhouette's might be good for this game's theme.
+		Further testing text/sounds as needed.
+		Main screen graphic.
+		
 	
