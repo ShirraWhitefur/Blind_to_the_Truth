@@ -1,0 +1,28 @@
+
+
+Stage 1
+	Completed
+		Game Name
+	Incomplete
+		Color picking
+			Main Background - For when there are no other background graphics in use.
+			Textbox Background
+			Namebox Background (Likely same as the textbox.)
+			Button-UI colors:
+				Not Selectable ("Grayed out")
+				Selectable
+					Active (Such as, you've selected that you want to have the display in Windowed mode)
+					Inactive (But you could select Fullscreen over there.)
+						These two will also help show which menu's you're currently in.
+			  Have both a background color for the button, and foreground color for the text.  Can be done with 'glow' around the text to make it even more legible in some cases.
+			Character colors:
+				One color of speech per character, and color for their name.  Likely to be the same.  Make sure they're readable against the textbox background.
+		Character Names
+Stage 1.1
+		Sample Text
+		Sample Sounds
+Stage 1.2
+		Test Build
+Stage 2
+				
+	

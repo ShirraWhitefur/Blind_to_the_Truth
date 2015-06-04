@@ -17,8 +17,8 @@ init -1 python hide:
 
     ## These control the width and height of the screen.
 
-    config.screen_width = 800
-    config.screen_height = 600
+    config.screen_width = 1024
+    config.screen_height = 768
 
     ## This controls the title of the window, when Ren'Py is
     ## running in a window.
@@ -28,7 +28,7 @@ init -1 python hide:
     # These control the name and version of the game, that are reported
     # with tracebacks and other debugging logs.
     config.name = "Blind to the Truth"
-    config.version = "0.0"
+    config.version = "0.01"
 
     #########################################
     # Themes
@@ -169,7 +169,7 @@ init -1 python hide:
 
     ## Set this to True if the game has voicing.
 
-    config.has_voice = False
+    config.has_voice = True
 
     ## Sounds that are used when button and imagemaps are clicked.
 
@@ -262,7 +262,7 @@ init -1 python hide:
     ## stored. (It needs to be set early, before any other init code
     ## is run, so the persistent information can be found by the init code.)
 python early:
-    config.save_directory = "Blind to the Truth-1433452233"
+    config.save_directory = "Blind to the Truth-1433453270"
 
 init -1 python hide:
     #########################################
