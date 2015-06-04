@@ -27,6 +27,7 @@ Stage 1
 				One color of speech per character, and color for their name.  Likely to be the same.  Make sure they're readable against the textbox background.
 				You'll want a color for 'the narrator', even if that's -usually- the Main Character.  This is for writing out sound effects, things heard, titles of places, time of day.. all that misc stuff.
 		Character Names
+		Find out what 'Voice Sustain' is.  Likely rename it, changing the Preference screen.
 Stage 1.1
 	Incomplete
 		Sample Text
@@ -43,5 +44,24 @@ Stage 2
 			Even if it's as simple as just one image per character, to show when they're speaking, even if it's just an silhouette piece.  In fact, silhouette's might be good for this game's theme.
 		Further testing text/sounds as needed.
 		Main screen graphic.
+Stage 3
+	Incomplete
+		Image Transitions
+			Choose how backgrounds will change by default.  Full screen fade out, then in again, or dissolve from one into the other?
+			Choose how you want character graphics to appear and disappear by default.  Most likely, a fade-in/out, but also reasonable is the 'slide in/out from sides of screen' or even dissolve in/out.
+			Objects are likely to be case-by-case.  Like showing a visual clue or such.
+Stage 4
+		Go over script and make extra notes and ask more questions, so implimentation in Renpy will be faster and easier and require less revision later.
+		Begin implimentation of the script.
+Stage 5
+		Finish implimentation of the script
+Stage 6
+		Impliment UI pieces
+		Impliment Sound pieces
+Stage 7
+		Add vocals.
+Stage 8
+		Functionally complete.  Initial release.
+		Go back and improve on UI if there's still time.
+		Add more images/sounds/etc, if there's still time.
 		
-	
