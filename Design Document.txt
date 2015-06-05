@@ -2,13 +2,13 @@
 Stage 0
 	Completed
 		Game Name
-	Incomplete
 		Install Github Client to Writer's computer (Optional)
+		Pull current Github down
+		Install RenPy SDK
+		Set up current github mirror in RenPy
+	Incomplete
 		Set up a method to coordinate on the scripts.
 			Github, Google-docs, etc.
-		Install RenPy SDK
-		Pull current Github down
-		Set up current github mirror in RenPy
 		Confirm that it all is working as planned.
 Stage 1
 	Incomplete
@@ -28,6 +28,8 @@ Stage 1
 				You'll want a color for 'the narrator', even if that's -usually- the Main Character.  This is for writing out sound effects, things heard, titles of places, time of day.. all that misc stuff.
 		Character Names
 		Find out what 'Voice Sustain' is.  Likely rename it, changing the Preference screen.
+			From the Documentation - "Normally, a playing voice is stopped at the start of the next interaction. The voice sustain statement can sustain voice playback through an interaction."
+			Likely best to leave it alone, unless we can figure out a more telling name for the option.  Might be best even to disable it from showing.
 Stage 1.1
 	Incomplete
 		Sample Text
