@@ -182,6 +182,7 @@ screen main_menu():
     # The background of the main menu.
     window:
         style "mm_root"
+        background ("images/background/background_00a_mainmenu.jpg")
 
     # The main menu buttons.
     frame:
