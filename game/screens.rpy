@@ -194,7 +194,7 @@ screen main_menu():
 
         textbutton _("Start Game") action Start()
         textbutton _("Load Game") action ShowMenu("load")
-        textbutton _("Preferences") action ShowMenu("preferences")
+        textbutton _("Options") action ShowMenu("preferences")
         textbutton _("Help") action Help()
         textbutton _("Quit") action Quit(confirm=False)
 
@@ -217,6 +217,7 @@ screen navigation():
     # The background of the game menu.
     window:
         style "gm_root"
+        background ("images/background/background_01.jpg")
 
     # The various buttons.
     frame:
@@ -227,7 +228,7 @@ screen navigation():
         has vbox
 
         textbutton _("Return") action Return()
-        textbutton _("Preferences") action ShowMenu("preferences")
+        textbutton _("Options") action ShowMenu("preferences")
         textbutton _("Save Game") action ShowMenu("save")
         textbutton _("Load Game") action ShowMenu("load")
         textbutton _("Main Menu") action MainMenu()
@@ -446,7 +447,7 @@ screen preferences():
                     label _("Voice Volume")
                     bar value Preference("voice volume")
 
-                    textbutton _("Voice Sustain") action Preference("voice sustain", "toggle")
+            #        textbutton _("Voice Sustain") action Preference("voice sustain", "toggle")
                     if config.sample_voice:
                         textbutton _("Test"):
                             action Play("voice", config.sample_voice)
@@ -543,7 +544,7 @@ screen quick_menu():
         textbutton _("Skip") action Skip()
         textbutton _("F.Skip") action Skip(fast=True, confirm=True)
         textbutton _("Auto") action Preference("auto-forward", "toggle")
-        textbutton _("Prefs") action ShowMenu('preferences')
+        textbutton _("Options") action ShowMenu('preferences')
 
 init -2:
     style quick_button:
