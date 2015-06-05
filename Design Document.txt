@@ -6,14 +6,19 @@ Stage 0
 		Pull current Github down
 		Install RenPy SDK
 		Set up current github mirror in RenPy
+		Confirm that it all is working as planned.
 	Incomplete
 		Set up a method to coordinate on the scripts.
 			Github, Google-docs, etc.
-		Confirm that it all is working as planned.
 Stage 1
+	Completed
+		Find out what 'Voice Sustain' is.
+			From the Documentation - "Normally, a playing voice is stopped at the start of the next interaction. The voice sustain statement can sustain voice playback through an interaction."
+			Currently disabled from showing.
 	Incomplete
 		Color picking
 			Main Background - For when there are no other background graphics in use.
+				Temporary one created.
 			Textbox Background
 			Namebox Background (Likely same as the textbox.)
 			Button-UI colors:
@@ -27,9 +32,6 @@ Stage 1
 				One color of speech per character, and color for their name.  Likely to be the same.  Make sure they're readable against the textbox background.
 				You'll want a color for 'the narrator', even if that's -usually- the Main Character.  This is for writing out sound effects, things heard, titles of places, time of day.. all that misc stuff.
 		Character Names
-		Find out what 'Voice Sustain' is.  Likely rename it, changing the Preference screen.
-			From the Documentation - "Normally, a playing voice is stopped at the start of the next interaction. The voice sustain statement can sustain voice playback through an interaction."
-			Likely best to leave it alone, unless we can figure out a more telling name for the option.  Might be best even to disable it from showing.
 Stage 1.1
 	Incomplete
 		Sample Text
@@ -46,12 +48,19 @@ Stage 2
 			Even if it's as simple as just one image per character, to show when they're speaking, even if it's just an silhouette piece.  In fact, silhouette's might be good for this game's theme.
 		Further testing text/sounds as needed.
 		Main screen graphic.
+			Very temporary one created.
 Stage 3
 	Incomplete
 		Image Transitions
 			Choose how backgrounds will change by default.  Full screen fade out, then in again, or dissolve from one into the other?
 			Choose how you want character graphics to appear and disappear by default.  Most likely, a fade-in/out, but also reasonable is the 'slide in/out from sides of screen' or even dissolve in/out.
 			Objects are likely to be case-by-case.  Like showing a visual clue or such.
+			Work on a 'Blink in/out of Focus' transition up.  4 stages, eyeblinks to clear / lose focus.
+				Probably scene changes with Fade.
+				First do it with textbox transitions / pause
+				Then try to do it as a proper background animation sequence.
+				Then try to make it into a simple applicable template that can be thrown on any of the images.  (less likely since it is probably a scene change)
+				Another possibility - Examine the combat animation code, and use that to run concurrent animations of a fade to black, and a fade to nothing for the figure, then fade to background and fade to new figure.  Uglier way, but doable.
 Stage 4
 		Go over script and make extra notes and ask more questions, so implimentation in Renpy will be faster and easier and require less revision later.
 		Begin implimentation of the script.
@@ -64,6 +73,8 @@ Stage 7
 		Add vocals.
 Stage 8
 		Functionally complete.  Initial release.
+Stage 9
+		The 'If there's still time' touchups section.
 		Go back and improve on UI if there's still time.
 		Add more images/sounds/etc, if there's still time.
-		
+		Animated 'fade in from TV static to sharp picture', and in reverse, for image transition.
