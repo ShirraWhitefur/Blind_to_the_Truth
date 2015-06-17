@@ -2,7 +2,7 @@
 init:
     $ renpy.music.register_channel("Ambient_Hospital_Machine","sfx",True,tight=True)
 
-
+# What is up with GIT? o.o
 # Declare images below this line, using the image statement.
 # eg. image eileen happy = "eileen_happy.png"
 image bg Background_01 = "images/background/background_01.jpg"
